@@ -27,6 +27,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL("INSERT INTO "+ TABLE +" (" + COLUMN_NAME
                 + ", " + COLUMN_YEAR  + ") VALUES ('Том Смит', 1981);");
     }
+
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion,  int newVersion) {
         db.execSQL("DROP TABLE IF EXISTS "+TABLE);
